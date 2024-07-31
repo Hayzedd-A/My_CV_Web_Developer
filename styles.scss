@@ -1,0 +1,111 @@
+@font-face {
+  font-family: outfit-regular;
+  src: url(assets/font/Outfit-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2em;
+  font-family: outfit-regular;
+}
+
+.sideBar {
+  background-color: rgb(219, 219, 219);
+  padding: 20px;
+  display: grid;
+  gap: 2em;
+  h2,
+  h1 {
+    text-align: center;
+  }
+  hr {
+    width: 100%;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+  }
+  .info {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+    img {
+      width: 40%;
+      height: auto;
+      border: 5px solid white;
+      border-radius: 50%;
+      background-color: gray;
+    }
+  }
+  .contact {
+    ul {
+      display: grid;
+      list-style: none;
+      margin-top: 1em;
+
+      li {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+        img {
+          width: 24px;
+          height: auto;
+        }
+      }
+    }
+  }
+  .skills {
+    ul {
+      display: grid;
+      margin-top: 1em;
+      margin-left: 3em;
+      gap: 8px;
+    }
+  }
+}
+
+.mainContent {
+  display: grid;
+  align-items: start;
+  gap: 1em;
+  background-color: white;
+  line-height: 1.5em;
+  padding: 20px;
+  hr {
+    width: 100%;
+    border: none;
+    border: 1px solid rgb(219, 219, 219);
+  }
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  p {
+    margin-top: 1em;
+  }
+  .year {
+    color: gray;
+  }
+  .title {
+    font-weight: bolder;
+  }
+  ul {
+    margin-left: 2em;
+  }
+  .education {
+    display: grid;
+    gap: 0.5em;
+    align-items: start;
+    .degree {
+      font-weight: bolder;
+      font-size: large;
+    }
+  }
+}
