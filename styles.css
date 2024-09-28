@@ -24,6 +24,10 @@ button:hover {
 }
 
 @media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
   button {
     display: none;
   }
@@ -32,6 +36,7 @@ button:hover {
     size: A4;
   }
 }
+
 .mainContainer {
   display: grid;
   grid-template-columns: 1fr 3fr;
