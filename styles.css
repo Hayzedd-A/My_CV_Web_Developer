@@ -2,6 +2,7 @@
   font-family: outfit-regular;
   src: url(assets/font/Outfit-Regular.ttf);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -12,24 +13,25 @@ button {
   position: fixed;
   top: 1em;
   right: 1em;
-  border: 2px solid rgb(219, 219, 219);
+  border: 2px solid #dbdbdb;
   padding: 4px 16px;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
 }
+
 button:hover {
-  background-color: rgb(219, 219, 219);
-  color: rgb(36, 35, 35);
+  background-color: #dbdbdb;
+  color: #242323;
 }
 
 @media print {
+  button {
+    display: none;
+  }
   * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
-  }
-  button {
-    display: none;
   }
   @page {
     margin: 0;
@@ -44,26 +46,36 @@ button:hover {
   font-family: outfit-regular;
 }
 
+@media (max-width: 640px) {
+  .mainContainer {
+    grid-auto-columns: unset;
+  }
+}
+
 .sideBar {
-  background-color: rgb(219, 219, 219);
+  background-color: #dbdbdb;
   padding: 20px;
   display: grid;
   gap: 2em;
 }
+
 .sideBar h2,
 .sideBar h1 {
   text-align: center;
 }
+
 .sideBar hr {
   width: 100%;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.9);
 }
+
 .sideBar .info {
   display: grid;
   gap: 8px;
   justify-items: center;
 }
+
 .sideBar .info img {
   width: 40%;
   height: auto;
@@ -71,25 +83,30 @@ button:hover {
   border-radius: 50%;
   background-color: gray;
 }
+
 .sideBar .contact ul {
   display: grid;
   list-style: none;
   margin-top: 1em;
 }
+
 .sideBar .contact ul li {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
+
 .sideBar .contact ul li a {
   color: inherit;
   text-decoration: none;
 }
+
 .sideBar .contact ul li img {
   width: 24px;
   height: auto;
 }
+
 .sideBar .skills ul {
   display: grid;
   margin-top: 1em;
@@ -105,32 +122,40 @@ button:hover {
   line-height: 1.5em;
   padding: 20px;
 }
+
 .mainContent hr {
   width: 100%;
   border: none;
-  border: 1px solid rgb(219, 219, 219);
+  border: 1px solid #dbdbdb;
 }
+
 .mainContent h2 {
   margin-bottom: 0.5em;
 }
+
 .mainContent p {
   margin-top: 1em;
 }
+
 .mainContent .year {
   color: gray;
 }
+
 .mainContent .title {
   font-weight: bolder;
 }
+
 .mainContent ul {
   margin-left: 2em;
 }
+
 .mainContent .education {
   display: grid;
   gap: 0.5em;
   align-items: start;
 }
+
 .mainContent .education .degree {
   font-weight: bolder;
   font-size: large;
-}/*# sourceMappingURL=styles.css.map */
+}
