@@ -46,6 +46,11 @@ button:hover {
   gap: 2em;
   font-family: outfit-regular;
 }
+@media (max-width: 640px) {
+  .mainContainer {
+    grid-auto-columns: unset;
+  }
+}
 @media (max-width: 650px) {
   .mainContainer {
     grid-template-columns: unset;
@@ -133,12 +138,12 @@ button:hover {
 .mainContent ul {
   margin-left: 2em;
 }
-.mainContent ul {
+.mainContent .education ul {
   display: grid;
   gap: 0.5em;
   align-items: start;
 }
-.mainContent ul .degree {
+.mainContent .education ul .degree {
   font-weight: bolder;
   font-size: large;
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
