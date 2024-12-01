@@ -27,6 +27,10 @@ button {
   button {
     display: none;
   }
+  .mainContainer {
+    grid-template-columns: 1fr 3fr;
+    gap: 0;
+  }
   @page {
     margin: 0;
     size: A4;
@@ -37,6 +41,9 @@ button {
   grid-template-columns: 1fr 3fr;
   gap: 2em;
   font-family: outfit-regular;
+  @media (max-width: 650px) {
+    grid-template-columns: unset;
+  }
 }
 
 .sideBar {
@@ -113,7 +120,7 @@ button {
     margin-bottom: 0.5em;
   }
   p {
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
   .year {
     color: gray;
@@ -124,7 +131,9 @@ button {
   ul {
     margin-left: 2em;
   }
-  .education {
+  // .education,
+  ul {
+    // margin-top: 0.2em;
     display: grid;
     gap: 0.5em;
     align-items: start;

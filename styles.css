@@ -27,6 +27,10 @@ button:hover {
   button {
     display: none;
   }
+  .mainContainer {
+    grid-template-columns: 1fr 3fr;
+    gap: 0;
+  }
   @page {
     margin: 0;
     size: A4;
@@ -37,6 +41,11 @@ button:hover {
   grid-template-columns: 1fr 3fr;
   gap: 2em;
   font-family: outfit-regular;
+}
+@media (max-width: 650px) {
+  .mainContainer {
+    grid-template-columns: unset;
+  }
 }
 
 .sideBar {
@@ -109,7 +118,7 @@ button:hover {
   margin-bottom: 0.5em;
 }
 .mainContent p {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 .mainContent .year {
   color: gray;
@@ -120,12 +129,12 @@ button:hover {
 .mainContent ul {
   margin-left: 2em;
 }
-.mainContent .education {
+.mainContent ul {
   display: grid;
   gap: 0.5em;
   align-items: start;
 }
-.mainContent .education .degree {
+.mainContent ul .degree {
   font-weight: bolder;
   font-size: large;
 }/*# sourceMappingURL=styles.css.map */
