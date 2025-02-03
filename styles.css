@@ -138,6 +138,10 @@ button:hover {
 .mainContent ul {
   margin-left: 2em;
 }
+.mainContent .education .courses ul {
+  line-height: 12px;
+  color: #595959;
+}
 .mainContent .education ul {
   display: grid;
   gap: 0.5em;
