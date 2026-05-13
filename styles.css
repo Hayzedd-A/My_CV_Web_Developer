@@ -321,6 +321,22 @@ h3 {
   color: var(--text-secondary);
 }
 
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.language-item {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.language-item strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .cv-header {
@@ -334,7 +350,7 @@ h3 {
   .cv-body {
     padding: 1.5rem;
   }
-  .skills-grid, .education-grid {
+  .skills-grid, .education-grid, .languages-grid {
     grid-template-columns: 1fr;
   }
   .experience-header, .project-header {
